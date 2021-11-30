@@ -26,8 +26,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/3.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = '*********************************'
-# 
+SECRET_KEY = 'w==ivz3++6_94s&rftfmnqua#2r7bm_eqjeek7=tsa9&h2wflm'
+
+#SECRET_KEY =('w==ivz3++6_94s&rftfmnqua#2r7bm_eqjeek7=tsa9&h2wflm') 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
@@ -135,8 +136,8 @@ USE_L10N = True
 USE_TZ = True
 
 # GOOGLE_API_KEYS = ['AIzaSyA_BflqTg7p40wGKo0O-P4bW8zh3lSM6v8','AIzaSyDed2NGHComh2pbxw_QzjJmAD-rWXt7C2A']
-GOOGLE_API_KEYS=['*******************************']
-# 
+GOOGLE_API_KEYS=['AIzaSyBTrXGQ50E7bzhufqqFK_oKI0hb7P71m-0']
+# API KEY = ('AIzaSyBTrXGQ50E7bzhufqqFK_oKI0hb7P71m-0')
 REST_FRAMEWORK = {
     'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.PageNumberPagination',
     'DEFAULT_FILTER_BACKENDS': ['django_filters.rest_framework.DjangoFilterBackend'],
