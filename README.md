@@ -13,10 +13,18 @@ Used Cron Jobs [django_cron](https://django-cron.readthedocs.io/en/latest/introd
 - Clone the project
 - As this project is based on Django, your system need to have proper python setup, refer [this](https://www.python.org/downloads/)
 - Go the project through the terminal and install all dependencies by using typing `pip install -r requirements.txt` in the terminal
-- Inside the `setting.py` file, fill the variable `GOOGLE_API_KEYS` with all the API Keys available,the list should be filled as `['API_KEY_1','API_KEY_2',...]`
+- Inside the `setting.py` file, fill the variable `GOOGLE_API_KEYS` with all the API Keys available,the list should be filled as `['API_KEY_1']`
 - For getting an API key follow [this](https://developers.google.com/youtube/v3/getting-started)
-- Setup crontab to run Job, Follow [this](https://django-cron.readthedocs.io/en/latest/installation.html)
-- Run the server using `python mange.py runserver`
+- Run the server using `python mange.py runserver 8000`
+
+ ## References
+- YouTube data v3 API: [https://developers.google.com/youtube/v3/getting-started](https://developers.google.com/youtube/v3/getting-started)
+- Search API reference: [https://developers.google.com/youtube/v3/docs/search/list](https://developers.google.com/youtube/v3/docs/search/list)
+- To fetch the latest videos you need to specify these: type=video, order=date, publishedAfter=<SOME_DATE_TIME>
+- Without publishedAfter, it will give you cached results which will be too old
+
+
+
 
 ## Screenshots
 
